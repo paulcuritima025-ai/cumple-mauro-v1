@@ -938,6 +938,68 @@ h3 {
   font-size: .95rem;
 }
 
+/* ---------- Algo que me recuerda a ti ---------- */
+.recuerdo-section {
+  padding-bottom: 110px;
+}
+
+.recuerdo-image {
+  width: 100%;
+  margin: 0 auto 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.recuerdo-foto {
+  margin: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--crema);
+  border: 1px solid var(--crema-line);
+  box-shadow: var(--shadow);
+}
+
+.recuerdo-foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 640px;
+  object-fit: contain;
+}
+
+.recuerdo-puntos {
+  width: min(800px, 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: 14px;
+}
+
+.recuerdo-punto {
+  padding: 18px 22px;
+  background: var(--crema-card);
+  border-left: 5px solid var(--guinda);
+  border-radius: 0 12px 12px 0;
+  box-shadow: 0 10px 30px rgba(43, 5, 12, .06);
+}
+
+.recuerdo-punto strong {
+  display: block;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 1.05;
+  letter-spacing: .02em;
+  color: var(--guinda);
+}
+
+.recuerdo-punto p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
 /* ---------- Carta ---------- */
 .letter-section {
   background: var(--crema);

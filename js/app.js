@@ -212,6 +212,26 @@
     });
   }
 
+  // ---------- Algo que me recuerda a ti ----------
+  // Acepta "fotos: [...]" (una o varias) o "foto: ..." (una sola).
+  const rec = contenido.recuerdo;
+  if (rec) {
+    const fotosRec = Array.isArray(rec.fotos) && rec.fotos.length
+      ? rec.fotos
+      : [rec.foto || ""];
+
+    $("#recuerdoImagen").innerHTML = fotosRec.map((src, n) => `
+      <figure class="recuerdo-foto">
+        ${media(src, "Algo que me recuerda a ti - Foto " + (n + 1), "Aquí va la foto")}
+      </figure>`).join("");
+
+    $("#recuerdoPuntos").innerHTML = (rec.puntos || []).map(p => `
+      <article class="recuerdo-punto reveal">
+        <strong>${p.titulo}</strong>
+        <p>${p.texto}</p>
+      </article>`).join("");
+  }
+
   // ---------- Carta ----------
   $("#envelope").addEventListener("click", () => {
     $("#envelope").classList.add("open");
