@@ -15,21 +15,21 @@ const contenido = {
 
   // Etapas de su vida (edad, título, texto, foto)
   ninez: [
-    { edad: "0 años",  titulo: "Debut en la vida",      texto: "El 16 de octubre de 2005 salió a la cancha un crack que todavía no sabía cuánto le iba a tocar celebrar.", foto: "" },
-    { edad: "3 años",  titulo: "Primeros toques",       texto: "Todo lo que rodaba era una pelota en potencia. Ahí empezó la mejor costumbre de su vida.", foto: "" },
-    { edad: "6 años",  titulo: "Patio, recreo y gol",   texto: "Cualquier espacio era una cancha y cualquier arco, el del Monumental.", foto: "" },
-    { edad: "9 años",  titulo: "Nace el hincha",        texto: "El crema y guinda dejó de ser un color y se volvió parte de la familia.", foto: "" },
-    { edad: "12 años", titulo: "Cambio de etapa",       texto: "Más grande, más pilas y con la camiseta puesta siempre que se podía.", foto: "" },
-    { edad: "15 años", titulo: "Ya sabía quién era",    texto: "Personalidad propia, ideas claras y un equipo del que nadie lo iba a mover.", foto: "" },
-    { edad: "18 años", titulo: "Mayoría de edad",       texto: "Llegó una etapa nueva, con más libertad y muchas cosas por empezar.", foto: "" },
-    { edad: "21 años", titulo: "Y aquí está",           texto: "Veintiún años de historias, aprendizajes y gente que lo quiere. Lo mejor todavía está por jugarse.", foto: "" }
+    { edad: "", titulo: "Debut en la vida", texto: "El 16 de octubre de 2005 salió a la cancha un crack que todavía no sabía cuánto le iba a tocar celebrar.", foto: "fotos/ninez/1.jpeg" },
+    { edad: "", titulo: "Primeros toques", texto: "Todo lo que rodaba era una pelota en potencia. Ahí empezó la mejor costumbre de su vida.", foto: "fotos/ninez/4.jpeg" },
+    { edad: "", titulo: "Patio, recreo y gol", texto: "Cualquier espacio era una cancha y cualquier arco, el del Monumental.", foto: "fotos/ninez/3.jpeg" },
+    { edad: "", titulo: "Nace el hincha", texto: "El crema y guinda dejó de ser un color y se volvió parte de la familia.", foto: "fotos/ninez/2.jpeg" },
+    { edad: "", titulo: "Cambio de etapa", texto: "Más grande, más pilas y con la camiseta puesta siempre que se podía.", foto: "fotos/ninez/5.jpeg" },
+    { edad: "", titulo: "Ya sabía quién era", texto: "Personalidad propia, ideas claras y un equipo del que nadie lo iba a mover.", foto: "fotos/ninez/7.jpeg" },
+    { edad: "", titulo: "Mayoría de edad", texto: "Llegó una etapa nueva, con más libertad y muchas cosas por empezar.", foto: "fotos/ninez/6.jpeg" },
+    { edad: "21 años", titulo: "Y aquí está", texto: "Veintiún años de historias, aprendizajes y gente que lo quiere. Lo mejor todavía está por jugarse.", foto: "fotos/ninez/8.jpeg" }
   ],
 
   // Familia (puedes agregar o quitar tarjetas)
   familia: [
-    { nombre: "Mamá",    relacion: "La primera hinchada",         mensaje: "Ejemplo de mensaje familiar. Aquí irá un mensaje real.", foto: "" },
-    { nombre: "Papá",    relacion: "El de los primeros partidos", mensaje: "Ejemplo de mensaje familiar. Aquí irá un mensaje real.", foto: "" },
-    { nombre: "Familia", relacion: "Los que siempre alientan",    mensaje: "Un pequeño mensaje de las personas que te quieren.", foto: "" }
+    { nombre: "Mamá", relacion: "La primera hinchada", mensaje: "Ejemplo de mensaje familiar. Aquí irá un mensaje real.", foto: "fotos/familia/9.jpeg" },
+    { nombre: "Papá", relacion: "El de los primeros partidos", mensaje: "Ejemplo de mensaje familiar. Aquí irá un mensaje real.", foto: "fotos/familia/10.jpeg" },
+    { nombre: "Familia", relacion: "Los que siempre alientan", mensaje: "Un pequeño mensaje de las personas que te quieren.", foto: "fotos/familia/11.jpeg" }
   ],
 
   // Recuerdos juntos. Cada uno puede tener: foto, fotos: [...], video, o nada.
@@ -68,9 +68,9 @@ const contenido = {
   laU: {
     foto: "",
     tarjetas: [
-      { grande: "1924",           titulo: "El año en que nació tu club", texto: "Un siglo de historia que se lleva por dentro, vayas donde vayas." },
-      { grande: "Crema y guinda", titulo: "Colores que no se negocian",  texto: "Se visten en el pecho, pero se sienten mucho más adentro." },
-      { grande: "¡Dale U!",       titulo: "El grito de siempre",         texto: "En las buenas, en las malas y en los partidos que se sufren hasta el final." }
+      { grande: "1924", titulo: "El año en que nació tu club", texto: "Un siglo de historia que se lleva por dentro, vayas donde vayas." },
+      { grande: "Crema y guinda", titulo: "Colores que no se negocian", texto: "Se visten en el pecho, pero se sienten mucho más adentro." },
+      { grande: "¡Dale U!", titulo: "El grito de siempre", texto: "En las buenas, en las malas y en los partidos que se sufren hasta el final." }
     ]
   },
 
