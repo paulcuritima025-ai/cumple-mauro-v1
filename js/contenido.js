@@ -27,9 +27,9 @@ const contenido = {
 
   // Familia (puedes agregar o quitar tarjetas)
   familia: [
-    { nombre: "Mamá", relacion: "Amor incondicional", mensaje: "Ejemplo de mensaje familiar. Aquí irá un mensaje real.", foto: "fotos/familia/9.jpeg" },
-    { nombre: "Papá", relacion: "Un apoyo para siempre", mensaje: "Ejemplo de mensaje familiar. Aquí irá un mensaje real.", foto: "fotos/familia/10.jpeg" },
-    { nombre: "Familia", relacion: "Los que siempre alientan", mensaje: "Un pequeño mensaje de las personas que te quieren.", foto: "fotos/familia/11.jpeg" }
+    { nombre: "Mamá", relacion: "Amor incondicional", mensaje: "Hijo mío, desde que llegaste a mi vida, llenaste mis días de un amor que no se puede explicar con palabras. Verte crecer y luchar por lo que quieres es una de mis mayores alegrías. Aunque a veces no te lo diga, siempre estás en mis pensamientos y en mis oraciones. Nunca olvides que, sin importar cuántos años cumplas, siempre serás mi niño y mi corazón estará contigo. Te amo infinitamente.", foto: "fotos/familia/9.jpeg" },
+    { nombre: "Papá", relacion: "Un apoyo para siempre", mensaje: "Hijo, la vida te enseñará muchas cosas, algunas bonitas y otras difíciles, pero quiero que sepas que nunca tendrás que enfrentarlo todo solo. Cree en ti, sigue adelante y nunca abandones tus sueños. Mi mayor deseo es verte triunfar, pero sobre todo, verte feliz y convertido en una buena persona. Siempre tendrás mi apoyo y mi cariño. Estoy orgulloso de ti, hijo.", foto: "fotos/familia/10.jpeg" },
+    { nombre: "Familia", relacion: "Los que siempre alientan", mensaje: "Hoy es un día especial porque celebramos la vida de alguien que ocupa un lugar muy importante en nuestros corazones. Deseamos que la vida te regale muchas oportunidades, momentos inolvidables y razones para sonreír. Que nunca te falten salud, amor y personas que crean en ti. Recuerda que, sin importar dónde estés o qué camino tomes, siempre tendrás una familia que te ama y estará orgullosa de ti. ¡Feliz cumpleaños!", foto: "fotos/familia/11.jpeg" }
   ],
 
   // Recuerdos juntos. Cada uno puede tener: foto, fotos: [...], video, o nada.
@@ -84,8 +84,8 @@ const contenido = {
       "fotos/recuerdo/17.jpeg"
     ],
     puntos: [
-      { titulo: "Eso que me recuerda a ti", texto: "Aquí cuenta qué es y por qué cada vez que lo ves piensas en él." },
-      { titulo: "Un detalle más", texto: "Puede ser una canción, un lugar, una comida o una costumbre que solo ustedes entienden." }
+      { titulo: "Eso que me recuerda a ti", texto: "Los conejitos siempre me van a recordar a ti, porque me hacen volver a ese momento tan bonito en el que tuvimos nuestra primera mascotita juntos.🐰💜 Fue algo pequeñito, pero para mí significó mucho, porque no era solo tener una mascota, sino compartir contigo una experiencia nueva, crear recuerdos y tener algo que formaba parte de los dos. Por eso, cada vez que veo un conejito, mi corazón me lleva un poquito hacia ti y me recuerda lo bonito que es guardar recuerdos de nosotros." },
+
     ]
   },
 
@@ -100,7 +100,7 @@ const contenido = {
     "Te quiero muchísimo. Feliz cumpleaños, mi amor. ❤️"
   ],
 
-  firma: "Fiorella",
+  firma: "tu vidita",
 
   sorpresa: "Nunca olvides que tienes en quien confiar, que lo que haces importa y que, pase lo que pase, siempre habrá gente alentándote."
 };

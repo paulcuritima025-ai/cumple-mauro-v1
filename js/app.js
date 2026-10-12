@@ -185,13 +185,23 @@
     });
   }
 
+
   // ---------- Días juntos ----------
   function updateTogether() {
-    const f = contenido.fechaInicio;
-    const start = new Date(f.anio, f.mes, f.dia, f.hora || 0, f.minuto || 0, 0);
-    const days = Math.max(0, Math.floor((new Date() - start) / 86400000));
+    // Fecha de inicio de la relación: 15 de diciembre de 2024
+    const start = new Date(2024, 11, 15, 0, 0, 0);
+    const now = new Date();
+
+    // Calcular los días completos transcurridos
+    const days = Math.max(
+      0,
+      Math.floor((now - start) / 86400000)
+    );
+
+    // Mostrar el contador con tres dígitos
     $("#daysTogether").textContent = String(days).padStart(3, "0");
   }
+
   updateTogether();
   setInterval(updateTogether, 60000);
 
