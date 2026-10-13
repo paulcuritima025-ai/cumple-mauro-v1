@@ -40,16 +40,29 @@
   </div>
 
 
-  <!-- MÚSICA -->
-  <audio id="backgroundMusic" src="audio/cancion.mp3" preload="auto" loop></audio>
 
-  <button id="musicControl" class="music-control" type="button" aria-label="Pausar música" aria-pressed="true">
-    <span class="music-icon">♫</span>
-    <span class="music-label">Música</span>
-    <span class="music-bars" aria-hidden="true">
-      <span></span><span></span><span></span><span></span>
-    </span>
-  </button>
+
+
+  <!-- REPRODUCTOR FLOTANTE -->
+  <div class="music-floating">
+    <div class="music-video">
+      <video id="backgroundMusic" preload="metadata" playsinline>
+        <source src="video/cancion.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <button id="musicControl" class="music-control paused" type="button" aria-label="Reproducir música"
+      aria-pressed="false">
+      <span class="music-icon">♫</span>
+      <span class="music-label">Música</span>
+      <span class="music-bars" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </span>
+    </button>
+  </div>
+
+
+
 
 
   <!-- SITIO PRINCIPAL -->

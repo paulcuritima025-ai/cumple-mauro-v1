@@ -2,24 +2,41 @@
   const $ = (s) => document.querySelector(s);
   const $$ = (s) => [...document.querySelectorAll(s)];
 
-  // ---------- Música ----------
+
+
+  // ---------- Música y video ----------
   const music = $("#backgroundMusic");
   const musicControl = $("#musicControl");
 
   function setMusicState(playing) {
     musicControl.classList.toggle("paused", !playing);
-    musicControl.setAttribute("aria-label", playing ? "Pausar música" : "Reproducir música");
+    musicControl.setAttribute(
+      "aria-label",
+      playing ? "Pausar música" : "Reproducir música"
+    );
     musicControl.setAttribute("aria-pressed", String(playing));
   }
 
-  musicControl.addEventListener("click", () => {
+  musicControl.addEventListener("click", async () => {
     if (music.paused) {
-      music.play().then(() => setMusicState(true)).catch(() => { });
+      try {
+        await music.play();
+        setMusicState(true);
+      } catch (error) {
+        console.error("No se pudo reproducir el video:", error);
+        setMusicState(false);
+      }
     } else {
       music.pause();
       setMusicState(false);
     }
   });
+
+  music.addEventListener("ended", () => {
+    music.currentTime = 0;
+    setMusicState(false);
+  });
+
 
   // ---------- Entrada ----------
   const intro = $("#intro");

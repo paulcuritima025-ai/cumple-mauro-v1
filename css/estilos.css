@@ -1477,3 +1477,70 @@ body.entered .music-control {
     transition: none !important;
   }
 }
+
+
+
+/* Reproductor que acompaña a toda la página */
+.music-floating {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 150px;
+}
+
+.music-floating .music-video {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+
+
+/* ---------- REPRODUCTOR FLOTANTE ---------- */
+.music-floating {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Video pequeño encima del botón */
+.music-floating .music-video {
+  width: 90px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.music-floating .music-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* El botón conserva su CSS original, sin modificaciones */
+
+@media (max-width: 600px) {
+  .music-floating {
+    right: 10px;
+    bottom: 10px;
+    gap: 4px;
+  }
+
+  .music-floating .music-video {
+    width: 70px;
+  }
+}
